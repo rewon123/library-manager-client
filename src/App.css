@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+html, body {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  transition: .3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  margin-right: 20px;
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sign-btn {
+  width: 130px;
+  text-decoration: none;
+  border: none;
+  background-color: #21B573;
+  padding: 10px 15px;
+  border-radius: 33px;
+  color: white;
+  font-size: 15px;
+}
+
+.side-text {
+  font-weight: 900;
+  padding: 50px;
+  margin: 0px;
+  text-align: left;
+}
+
+.first-part {
+  margin-top: 50px;
+}
+
+.side-text p {
+  color: #6C6B6B;
+}
+
+.card-withhover {
+  margin-top: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F0FFF0;
+  transition: 0.5s ease;
+}
+
+.card-withhover:hover {
+  background-color: white;
+  box-shadow: 5px 5px 15px 7px lightgrey;
+}
+
+.card-withhover img {
+  width: 30%;
+  margin: 25% 35%;
+}
+
+.course-online {
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.online-course-card img {
+  padding: 15px;
+}
+
+.online-course-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 5px rgba(238, 233, 233, 0.781);
+}
+
+.card-footer {
+  background-color: white;
+  border: none;
+}
+
+.testimonial {
+  padding: 50px 10px;
+}
+
+.last-bg {
+  background-color: #282531;
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.center-alignment {
+  margin: 0% 25%;
+  margin-top: 7.5%;
+  width: 570px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ABABAB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.input-field {
+  border: none;
+  border-bottom: 0.10px solid #C5C5C5;
+  width: 462px;
+  height: 42px;
+}
+
+.social-signIn {
+  width: 461px;
+  height: 51px;
+  border: 1px solid #C7C7C7;
+  box-sizing: border-box;
+  border-radius: 57px;
+  margin: 0px 28.5%;
+  margin-top: 15px;
+}
+
+.signUp-btn {
+  border: none;
+  background: #F9A51A;
+  width: 462px;
+  height: 50px;
+  padding: 14px 165px;
+  margin-top: 30px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#file-chosen {
+  margin-left: 0.3rem;
+  font-family: sans-serif;
+}
+
+.file-input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: rgb(251, 251, 251) !important;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #efefef !important;
+  ;
+  border-radius: 5px !important;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(176, 178, 180) !important;
+  ;
+}
+
+@media only screen and (max-width: 580px) {
+  .card {
+    margin-top: 150px;
   }
 }
