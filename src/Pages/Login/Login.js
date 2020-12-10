@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
-import { handleGoogleSignIn, handleSignOut, handleFbSignIn, initializeLoginFramework, createUserWithEmailAndPassword, signInWithEmailAndPassword } from './LoginManager';
+import { handleGoogleSignIn, initializeLoginFramework, createUserWithEmailAndPassword, signInWithEmailAndPassword } from './LoginManager';
 import { useHistory, useLocation } from 'react-router-dom';
 import { UserContext } from '../../App';
-
+import logo from './38870-google-logo-effect.gif'
 
 
 const Login = () => {
@@ -115,7 +115,7 @@ const Login = () => {
                 </form>
                 <p>are you a new user? <span style={{ cursor: 'pointer' }} onClick={() => setNewUser(!newUser)}>sign up</span> </p>
             </div>
-            <div className="social-signIn d-flex align-items-center" onClick={googleSignIn}> <img src='{google}' style={{ width: '37px', height: '37px', margin: '10px' }} alt="" /> <p style={{ marginLeft: '100px' }}>sign in with Google</p> </div>
+            <div className="social-signIn d-flex align-items-center" onClick={googleSignIn}> <img src={logo} style={{ width: '37px', height: '37px', margin: '10px' }} alt="" /> <p style={{ marginLeft: '100px' }}>sign in with Google</p> </div>
 
             <p style={{ color: 'red' }}>{user.error}</p>
 
